@@ -1,0 +1,85 @@
+.sidebar {
+    width: 264px;
+    height: 920px;
+    background-color: var(--color-white);
+}
+
+.sidebar-wrapper {
+    display: grid;
+
+}
+
+.user-info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    margin: 0 0 16px 0;
+    border-bottom: 1px solid var(--color-gray-opacity-10);
+}
+
+.user-icon {
+    background-color: var(--color-gray-opacity-8);
+    width: 40px;
+    height: 40px;
+    padding: 4px 0;
+    position: relative;
+}
+
+.user-letter {
+    color: var(--color-gray-opacity-40);
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    position: absolute;
+    left: 11px;
+    top: 5px;
+}
+
+.username {
+    color: var(--color-gray);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.user-cabinet {
+    color: var(--color-gray-opacity-60);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.btn-views {
+    color: var(--color-gray);
+    padding: 0 0 0 56px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    background: url("../images/aside/book-icon-gray.svg") no-repeat left 24px center;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-views:hover {
+    color: var(--color-blue);
+    padding: 0 0 0 56px;
+    position: relative;
+    background: url("../images/aside/book-icon.svg") no-repeat left 24px center;
+}
+
+.btn-views::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 0;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-views:hover::before {
+    height: 40px;
+    background-color: var(--color-blue);
+}

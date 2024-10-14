@@ -1,0 +1,9 @@
+.content-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.main {
+    width: 866px;
+}
