@@ -61,8 +61,8 @@ body {
     /*--color-white-opacity-50: rgba(255, 255, 255, 0.5);*/
     /*--color-white-opacity-60: rgba(255, 255, 255, 0.6);*/
     --color-blue: #1E3DAF;
-    /*--color-light-blue: #516ED7;*/
-    /*--color-dark-blue: #0A2072;*/
+    --color-light-blue: #516ED7;
+    --color-dark-blue: #0A2072;
     --color-gray: #2A2F37;
     /*--color-gray-opacity-2: rgba(42, 47, 55, 0.02);*/
     --color-gray-opacity-8: rgba(42, 47, 55, 0.08);
