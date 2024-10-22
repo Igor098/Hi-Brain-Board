@@ -57,19 +57,16 @@ body {
 
 :root {
     --color-white: #fff;
-    /*--color-white-opacity-12: rgba(255, 255, 255, 0.12);*/
-    /*--color-white-opacity-50: rgba(255, 255, 255, 0.5);*/
-    /*--color-white-opacity-60: rgba(255, 255, 255, 0.6);*/
+    --color-white-opacity-12: rgba(255, 255, 255, 0.12);
+    --color-white-opacity-50: rgba(255, 255, 255, 0.5);
+    --color-white-opacity-60: rgba(255, 255, 255, 0.6);
     --color-blue: #1E3DAF;
     --color-light-blue: #516ED7;
     --color-dark-blue: #0A2072;
     --color-gray: #2A2F37;
-    /*--color-gray-opacity-2: rgba(42, 47, 55, 0.02);*/
     --color-gray-opacity-8: rgba(42, 47, 55, 0.08);
     --color-gray-opacity-10: rgba(42, 47, 55, 0.10);
-    /*--color-gray-opacity-12: rgba(42, 47, 55, 0.12);*/
     --color-gray-opacity-40: rgba(42, 47, 55, 0.4);
     --color-gray-opacity-60: rgba(42, 47, 55, 0.6);
-    --icon-color:  #b4b6b8;
-    /*--search-item-color: #d3d3d3;*/
+    --icon-color:  #AAACAF;
 }

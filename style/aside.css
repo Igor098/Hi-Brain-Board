@@ -1,12 +1,12 @@
 .sidebar {
-    width: 264px;
-    height: 920px;
+    width: 25%;
     background-color: var(--color-white);
+    min-height: 100%;
+    position: relative;
 }
 
 .sidebar-wrapper {
     display: grid;
-
 }
 
 .user-info-wrapper {
@@ -51,24 +51,40 @@
     line-height: 16px;
 }
 
-.btn-views {
+.categories {
+    display: grid;
+    gap: 24px;
+}
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+}
+
+.category-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
     color: var(--color-gray);
-    padding: 0 0 0 56px;
+    padding: 0 0 0 22px;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    background: url("../images/aside/book-icon-gray.svg") no-repeat left 24px center;
     transition: all 0.3s ease-in-out;
 }
 
-.btn-views:hover {
+.category-btn:hover {
     color: var(--color-blue);
-    padding: 0 0 0 56px;
+    padding: 0 0 0 22px;
     position: relative;
-    background: url("../images/aside/book-icon.svg") no-repeat left 24px center;
 }
 
-.btn-views::before {
+.category-btn:hover .btn-icon svg path {
+    stroke: var(--color-blue);
+}
+
+.category-btn::before {
     content: '';
     display: block;
     width: 2px;
@@ -79,7 +95,55 @@
     transition: all 0.3s ease-in-out;
 }
 
-.btn-views:hover::before {
+.category-btn:hover::before {
+    height: 40px;
+    background-color: var(--color-blue);
+}
+
+.active {
+    position: relative;
+}
+
+.active::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 40px;
+    background-color: var(--color-gray);
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+.btn-exit {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    bottom: 40px;
+    left: 24px;
+}
+
+.btn-exit:hover {
+    color: var(--color-blue);
+}
+
+.btn-exit:hover .exit-icon svg path {
+    stroke: var(--color-blue);
+}
+
+.btn-exit::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 0;
+    position: absolute;
+    bottom: -8px;
+    left: -24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-exit:hover::before {
     height: 40px;
     background-color: var(--color-blue);
 }
